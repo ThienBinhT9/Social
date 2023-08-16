@@ -1,0 +1,174 @@
+.wrapper{
+    
+    @media (max-width:740px) {
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .header{
+        padding:12px;
+            
+        .header__search{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+
+            svg{
+                font-size: 20px;
+            }
+        }
+
+        .header__under{
+            
+            .header__under__item{
+                background-color: #dadada;
+                padding: 4px 8px;
+                font-size: 15px;
+                border-radius: 99px;
+                margin-right: 8px;
+            }
+        }
+
+    }
+
+    .body{
+
+        .body__section{
+            padding: 12px;
+            border-top: 1px solid #b6b6b6;
+
+            .section__header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 12px;
+
+                h4{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+
+            .section__body{
+
+                .user{
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: 18px;
+
+                    .user__avatar{
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-right: 16px;
+                    }
+
+                    .user__info{
+                        flex: 1;
+
+                        .user__info__top{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 12px;
+
+                            .user__info__name{
+                                font-weight: 500;
+                                font-size: 17px;
+                            }
+
+                            span{
+                                font-size: 14px;
+                                opacity: 0.6;
+                            }
+                        }
+
+                        .user__info__bottom{
+                            display: flex;
+                            align-items: center;
+
+                            .user__info__btn{
+                                flex: 1;
+                                padding: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.friends{
+    border-top: 1px solid #d1d1d1;
+    padding: 12px;
+
+    .friends__user{
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+
+        .friend__user__avatar{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 12px;
+        }
+
+        .friend__user__username{
+            font-weight: 500;
+            flex: 1;
+        }
+
+        svg{
+            font-size: 20px;
+            margin-right: 8px;
+            padding: 4px;
+        }
+    }
+}
+
+.model__friendOption{
+    height: 60vh;
+    bottom: 0 !important;
+    top: unset !important;
+    border-radius: 12px 12px 0 0;
+
+    .model__friendOption__user{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #c1c1c1;
+        padding-bottom: 8px;
+
+        .model__friendOption__avatar{
+            width: 45px;
+            height: 45px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .model__friendOption__btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 5px;
+
+        svg{
+            width: 25px;
+            font-size: 20px;
+            opacity: 0.6;
+            margin-right: 8px;
+        }
+    }
+}

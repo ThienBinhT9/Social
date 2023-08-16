@@ -1,0 +1,118 @@
+.auth__wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .auth__container{
+        padding: 12px 48px;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 0 4px #999;
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+
+        @media (max-width:740px) {
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 0;
+            padding: 12px 24px;
+        }
+
+        .auth__logo{
+            margin-right: 56px;
+            
+            @media (max-width:740px) {
+                padding: 0 36px;
+                width: 100%;
+                margin-bottom: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 32px;
+                margin-right: 0;
+            }
+            
+        }
+
+        .auth__content{
+
+            @media (max-width:740px) {
+                width: 100%;
+            }
+
+            .auth__form{
+                margin-bottom: 24px;
+                position: relative;
+
+                label{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: var(--text-color);
+                    margin-bottom: 3px;
+                }
+
+                input{
+                    width: 300px;
+                    border: none;
+                    padding: 4px 7px;
+                    font-size: 16px;
+                    border-bottom: 2px solid var(--main-color);
+                    caret-color: var(--main-color);
+                    display: block;
+
+                    @media (max-width:740px) {
+                        display: block;
+                        width: 100%;
+                    }
+
+                }
+
+                .auth__form__message{
+                    position: absolute;
+                    bottom: -20px;
+                    left: 5px;
+                    font-size: 12px;
+                    color: red;
+                }
+            }
+
+            .auth__submit{
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+
+                @media (max-width:740px) {
+                    flex-direction: column-reverse;
+                    margin-top: 52px;
+                }
+
+                .auth__submit__btn{
+                    margin-left: 12px;
+
+                    @media (max-width:740px) {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-bottom: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:hover{
+                        
+                    }
+                }
+            }
+        }
+    }
+}

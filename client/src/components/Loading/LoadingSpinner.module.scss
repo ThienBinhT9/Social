@@ -1,0 +1,183 @@
+.loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon-loading{
+        animation: rotate ease-in 0.6s infinite;
+    }
+
+    svg{
+        font-size: 2rem;
+        color: var(--main-color);
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.loadingBar{
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999999999999999999999999999999999999999999;
+    right: 0;
+
+    .loadingBar_content{
+        height: 100%;
+        background-color: var(--main-color);
+        transition: width 0.7s ease;
+    }
+}
+
+.loading__post{
+
+
+    .loading__post__header{
+        margin-bottom: 12px;
+
+        .loading__post__info{
+            display: flex;
+            align-items: center;
+            padding: 0 4px;
+
+            .avatar{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 12px;
+                background-color: #c6c6c6;
+                position: relative;
+
+                span{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #d9d9d9;
+                    animation: colorBg ease 1.2s infinite;
+                }
+
+            }
+
+            .loading__post__info__name{
+
+                .name{
+                    position: relative;
+                    display:block;
+                    width: 100px;
+                    height: 16px;
+                    background-color: #c6c6c6;
+                    border-radius: 2px;
+                    margin-bottom: 4px;
+                    overflow: hidden;
+
+                    span{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: #d9d9d9;
+                        animation: colorBg ease 1.2s infinite;
+                    }
+                    
+                }
+
+                .createdAt{
+                    position: relative;
+                    display:block;
+                    width: 80px;
+                    height: 12px;
+                    background-color: #c6c6c6;
+                    border-radius: 2px;
+                    margin-bottom: 4px;
+                    overflow: hidden;
+
+                    span{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: #d9d9d9;
+                        animation: colorBg ease 1.2s infinite;
+                    }
+                }
+            }
+        }
+    }
+
+    .body{
+        background-color: #c6c6c6;
+        height: 60vh;
+
+    }
+}
+
+.loading__user{
+    display: flex;
+    align-items: center;
+
+    .loading__user__avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #c6c6c6;
+        margin-right: 12px;
+        overflow: hidden;
+    }
+
+    .loading__user__info{
+
+        .loading__user__info__name{
+            width: 150px;
+            background-color: #c6c6c6;
+            height: 20px;
+            margin-bottom: 6px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .loading__user__info__created{
+            width: 130px;
+            height: 16px;
+            display: inline-block;
+            background-color: #c6c6c6;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+    }
+
+    span{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #959595;
+        animation: colorBg ease 1.2s infinite;
+    }
+}
+
+
+@keyframes colorBg {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(200%);
+    }
+}

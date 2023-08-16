@@ -1,0 +1,32 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 16px;
+
+    .avatar{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 12px;
+    }
+
+    .info{
+        flex: 1;
+
+        p{
+            font-weight: 600;
+            line-height: 1;
+            font-size: 15px;
+        }
+
+        span{
+            font-size: 12px;
+            line-height: 1;
+            opacity: 0.8;
+        }
+
+    }
+}

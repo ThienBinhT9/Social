@@ -1,0 +1,24 @@
+.wrapper{
+    overflow-x: hidden;
+    
+    .container{
+        width: 97%;
+        margin-left: auto;
+
+        @media (max-width:740px) {
+            width: 100%;
+        }
+    }
+
+    .content{
+        padding-top: 60px;
+        padding-left: 3px;
+        overflow-y: overlay;
+        overflow-x: hidden;
+
+        @media (max-width:740px) {
+            padding-top: 0;
+            padding-left: 0;
+        }
+    }
+}
